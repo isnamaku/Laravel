@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>SanberBook</title>
-</head>
-<body>
+@extends('master')
+@section('form')
 <h1>Buat Account Baru!</h1>
 <h3>Sign Up Form</h3>
 <form method="post" action="process" >
@@ -39,5 +35,4 @@
 	<br>
 	<input type="submit" name="submit" value="Sign Up">
 </form>
-</body>
-</html>
+@endsection

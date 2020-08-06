@@ -12,10 +12,14 @@ class AuthController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function registration (){
+        $page = 'form';
         return view('form');
     }
 
     
+    public function data(){
+        return view('data-tables');
+    }
 
     public function process(Request $request){
         $first_name = $request->input('first_name');
@@ -26,5 +30,9 @@ class AuthController
         return view('welcome2',['first_name' => $first_name, 'last_name'=>$last_name]);
        
 
+    }
+
+    public function master(){
+        return view('master');
     }
 }

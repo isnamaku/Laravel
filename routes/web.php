@@ -23,7 +23,10 @@ Route::get('/form', function () {
 Route::get('/welcome2', function () {
     return view('welcome2');
 });
-Route::get('register','AuthController@registration');
+Route::get('/register','AuthController@registration');
 Route::get('welcome2', 'AuthController@welcome2');
-Route::post('process','AuthController@process');
+Route::post('/process','AuthController@process');
+Route::get('/master', 'AuthController@master');
+Route::get('/data-tables', 'AuthController@data');
+
 ?>
