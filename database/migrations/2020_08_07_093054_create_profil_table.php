@@ -13,6 +13,8 @@ class CreateProfilTable extends Migration
      */
     public function up()
     {
+       
+  
         Schema::create('profil', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama_lengkap');
@@ -20,7 +22,6 @@ class CreateProfilTable extends Migration
             $table->string('foto');
         });
     }
-
     /**
      * Reverse the migrations.
      *
@@ -29,5 +30,6 @@ class CreateProfilTable extends Migration
     public function down()
     {
         Schema::dropIfExists('profil');
+        Schema::enableForeignKeyConstraints();
     }
 }
