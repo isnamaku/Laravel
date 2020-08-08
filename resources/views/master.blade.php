@@ -747,6 +747,8 @@
           @yield('data-tables')
           @yield('form')
           @yield('welcome')
+          @yield('postPertanyaan')
+          @yield('showPertanyaan')
        
      
     

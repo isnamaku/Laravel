@@ -2,7 +2,7 @@
 @section('form')
 <h1>Buat Account Baru!</h1>
 <h3>Sign Up Form</h3>
-<form method="post" action="process" >
+<form method="post" action="/process" >
 <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>">
 	<p>First Name :</p>
 	<input type="text" name="first_name">

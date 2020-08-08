@@ -28,5 +28,7 @@ Route::get('welcome2', 'AuthController@welcome2');
 Route::post('/process','AuthController@process');
 Route::get('/master', 'AuthController@master');
 Route::get('/data-tables', 'AuthController@data');
+Route::get('/pertanyaan/create', 'PostController@createPertanyaan'); //memnampilkan form u/ pertanyaan
+Route::get('/pertanyaan', 'PostController@insertPertanyaan'); 
 
 ?>

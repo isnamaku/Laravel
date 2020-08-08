@@ -25,7 +25,7 @@ class AuthController
         $first_name = $request->input('first_name');
         $last_name = $request->input('last_name');
 
-
+    
       
         return view('welcome2',['first_name' => $first_name, 'last_name'=>$last_name]);
        
